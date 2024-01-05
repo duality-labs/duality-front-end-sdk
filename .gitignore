@@ -1,0 +1,15 @@
+# dev
+dist
+node_modules
+
+# OS
+.DS_Store
+
+# misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editors
+.idea
+.vscode
