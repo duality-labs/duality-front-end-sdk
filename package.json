@@ -1,6 +1,6 @@
 {
   "name": "@duality-labs/duality-front-end-sdk",
-  "version": "0.5.0",
+  "version": "0.1.0",
   "description": "Component hooks and tools to interact with the Duality Dex chain and indexer for front ends",
   "author": "hello@duality.xyz",
   "main": "dist/main/index.js",
