@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "description": "Component hooks and tools to interact with the Duality Dex chain and indexer for front ends",
   "author": "hello@duality.xyz",
+  "homepage": "https://github.com/duality-labs/duality-front-end-sdk#readme",
+  "license": "MIT",
   "main": "dist/main/index.js",
   "module": "dist/module/index.js",
   "types": "dist/types/index.d.ts",
@@ -31,5 +33,12 @@
   },
   "optionalDependencies": {
     "react": "^18.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duality-labs/duality-front-end-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duality-labs/duality-front-end-sdk/issues"
   }
 }
