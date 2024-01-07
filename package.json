@@ -9,7 +9,7 @@
   "module": "dist/module/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "build:main:dir": "esbuild src/**/*.ts --format=esm --outdir=dist/main",
+    "build:main:dir": "esbuild src/**/*.ts --format=cjs --outdir=dist/main",
     "build:main:bundle": "esbuild --bundle src/index.ts --format=cjs --outfile=dist/main/bundle.js",
     "build:main": "npm run build:main:dir && npm run build:main:bundle",
     "build:module:dir": "esbuild src/**/*.ts --format=esm --outdir=dist/module",
