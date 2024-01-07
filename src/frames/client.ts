@@ -1,4 +1,5 @@
 import type { SigningStargateClient } from "@cosmjs/stargate";
+import type { ToastOptions } from 'react-hot-toast/headless';
 import type { DualityFrontEndMessage } from "./types";
 
 // re-use channels by origin
@@ -77,7 +78,7 @@ export default class DexFrameClient {
     });
   }
   // show notifications in top window
-  showNotification(opts: {
+  showNotification(opts: ToastOptions & {
     style?: "loading" | "success" | "error" | "blank";
     heading: string;
     body?: string;
