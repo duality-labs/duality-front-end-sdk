@@ -1,6 +1,6 @@
 {
   "name": "@duality-labs/duality-front-end-sdk",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Component hooks and tools to interact with the Duality Dex chain and indexer for front ends",
   "author": "hello@duality.xyz",
   "homepage": "https://github.com/duality-labs/duality-front-end-sdk#readme",
@@ -27,6 +27,7 @@
     "swr": "^2.2.4"
   },
   "devDependencies": {
+    "@cosmjs/stargate": "0.31.1",
     "esbuild": "^0.19.11",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
