@@ -1,6 +1,6 @@
 {
   "name": "@duality-labs/duality-front-end-sdk",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Component hooks and tools to interact with the Duality Dex chain and indexer for front ends",
   "author": "hello@duality.xyz",
   "homepage": "https://github.com/duality-labs/duality-front-end-sdk#readme",
@@ -9,11 +9,11 @@
   "module": "dist/module/index.js",
   "types": "dist/types/index.d.ts",
   "scripts": {
-    "build:main:dir": "esbuild src/**/*.ts --format=cjs --outdir=dist/main",
-    "build:main:bundle": "esbuild --bundle src/index.ts --format=cjs --outfile=dist/main/bundle.js",
+    "build:main:dir": "esbuild src/*.ts src/**/*.ts --format=cjs --outdir=dist/main",
+    "build:main:bundle": "esbuild --bundle src/index.ts --format=cjs --minify --sourcemap --outfile=dist/main/bundle.js",
     "build:main": "npm run build:main:dir && npm run build:main:bundle",
-    "build:module:dir": "esbuild src/**/*.ts --format=esm --outdir=dist/module",
-    "build:module:bundle": "esbuild --bundle src/index.ts --format=esm --outfile=dist/module/bundle.js",
+    "build:module:dir": "esbuild src/*.ts src/**/*.ts --format=esm --outdir=dist/module",
+    "build:module:bundle": "esbuild --bundle src/index.ts --format=esm --minify --sourcemap --outfile=dist/module/bundle.js",
     "build:module": "npm run build:module:dir && npm run build:module:bundle",
     "build:types": "tsc --emitDeclarationOnly --outDir dist/types",
     "build": "npm run clean && npm run build:main && npm run build:module && npm run build:types",
