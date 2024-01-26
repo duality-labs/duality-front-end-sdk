@@ -1,7 +1,7 @@
 # Duality Front End SDK
 
 A collection of useful component hooks and tools to interact with the Duality
-Dex chain and indexer for front ends.
+Dex and indexer for front ends.
 
 ## Get Started
 
@@ -11,7 +11,6 @@ Dex chain and indexer for front ends.
 
 See also:
 - https://github.com/duality-labs/hapi-indexer
-- https://hadron.notion.site/Indexer-API-a2eabb732292453196332cb2727e53f7
 
 Subscribing to indexer data updates may seem complicated at first, given that
 the event stream returns partial updates and these updates need to be
